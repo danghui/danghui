@@ -1,0 +1,67 @@
+html,body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,input{padding:0;margin:0}
+ul,ol,li{list-style: none;}
+/*#topBox,#contentBox,#bottomBox{margin:0 auto}*/
+/*顶部*/
+#topBox{width:642px;height:44px;background-color: #3e5656;position: fixed;top:0;}
+#top{width:100%;font-size: 18px;line-height: 44px;color:#ffe4bf;}
+#contentBox{margin-top:44px;margin-bottom:92px;width:642px;min-height:532px;}
+#content{width:100%}
+/*设置音乐放置格式*/
+.geClass{display:flex;
+    align-items:center;
+    height:108px;
+    background-color: #054859;
+    border-bottom: solid 1px #fff;
+}
+.geClass span{width:15.6%;line-height: 108px;text-align: center;color:#fff;font-size: 20px;font-weight: bolder; }
+.geClass ul{width:74.4%;}
+.geClass ul li{line-height: 54px;color:#fff;font-size: 20px;font-weight: bolder;}
+/*删除图片*/
+.shanChu{width:33px;height:33px;}
+/*进度条*/
+#jiDuTiao{width:642px;height:4px;background-color: #054859;position: fixed;bottom:92px;}
+#jiDuTiao .guangBiao{width:4px;height:4px;background-color: #91c812;}
+/*底部*/
+#bottomBox{width:642px;height:92px;background-color: #02223b;position: fixed;bottom:0;}
+#bottom{width:100%;
+    height:92px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#renId{border-radius:50%;}
+.imgClass{width:90px;}
+.imgClass:hover{background-color: #1b384e}
+.bianse{background-color: #1a6b80}
+/*适应不同屏幕*/
+@media screen and (min-width: 640px){
+    #topBox,#contentBox,#bottomBox,#top,#content,#bottom{
+        width: 100%;
+        animation-delay: 2s;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 642px){
+   #topBox,#contentBox,#bottomBox,#top,#content,#bottom{
+       width: 100%;
+       animation-delay: 2s;
+   }
+}
+@media screen and (max-width: 320px){
+    #topBox,#contentBox,#bottomBox,#top,#content,#bottom{
+        width: 100%;
+    }
+    .geClass{
+        height:80px;
+        background-color: #054859;
+        border-bottom: solid 1px #fff;
+        animation-delay: 2s;
+    }
+    .geClass span{width:15.6%;line-height: 80px;text-align: center;color:#fff;font-size: 16px;font-weight: bolder; }
+    .geClass ul{width:74.4%;}
+    .geClass ul li{line-height: 40px;color:#fff;font-size: 16px;font-weight: bolder;}
+    /*删除图片*/
+    .shanChu{width:26px;height:26px;}
+
+}
